@@ -1,0 +1,20 @@
+create files:
+docker-compose.yaml
+.env
+
+terminal:
+docker-compose up -d
+
+if error (remove your volumes):
+docker volume prune
+docker-compose up -d again
+
+----
+
+import:
+from airflow import DAG
+
+with DAG(
+    ...
+)
+
